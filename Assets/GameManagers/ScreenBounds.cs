@@ -79,9 +79,4 @@ public class ScreenBounds : MonoBehaviour
             return worldPosition;
         }
     }
-
-    //public Vector3 SetBoundsSize()
-    //{
-    //    return boxCollider.bounds.size;
-    //}
 }

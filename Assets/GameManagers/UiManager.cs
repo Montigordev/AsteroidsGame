@@ -76,7 +76,7 @@ public class UiManager : MonoBehaviour
         angle = Mathf.Round(player.transform.rotation.eulerAngles.z);
         speed = Mathf.Round(playerMove.Speed);
         ammo = playerShoot.LaserAmount;
-        coolDown = playerShoot.LaserDelay;
+        coolDown = Mathf.Round(playerShoot.LaserDelay * 10f)/10f;
         DisplayText();
         DisplayScore();
     }
